@@ -1,6 +1,8 @@
 package com.example.tablayoutapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         Lesson.add("Какойто предмет");
         Lesson.add("Пусто");
         Lesson.add("Что-то");
+        Lesson.add("DFGege");
+        Lesson.add("dregerg");
 
         ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(new SampleFragmentPageAdapter(getSupportFragmentManager(),MainActivity.this));
